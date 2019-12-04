@@ -63,7 +63,7 @@ echo 'GUnit Test Suite DONE'
 stage('Integration Tests') { 
 steps { 
 script { 
-integrationTestSuites = props['integrationTestSuites'] 
+//integrationTestSuites = props['integrationTestSuites'] 
 } 
 dir(props['baseDir']) { 
 //sh "./gwb runSuite -Dsuite=$integrationTestSuites -Denv=h2mem" 
@@ -171,7 +171,7 @@ steps {
 dir(props['baseDir']) { 
 sh './gwb genDataDictionary' 
 } 
-publishHTML([ 
+/*publishHTML([ 
 allowMissing : false, 
 alwaysLinkToLastBuild: false, 
 keepAll : false, 
@@ -179,7 +179,7 @@ reportDir : props['baseDir'] + props['dataDictionarySubpath'],
 reportFiles : props['dataDictionaryReportFile'], 
 reportName : props['dataDictionaryReportName'], 
 reportTitles : props['dataDictionaryReportTitle'] 
-]) 
+]) */
 echo 'DATA DICTIONARY GENERATED' 
 } 
 } 
