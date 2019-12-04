@@ -3,14 +3,14 @@ pipeline {
 agent { 
 node { 
 label 'master' 
-customWorkspace '/var/lib/jenkins/workspace/ClaimCenter1000/modules/configuration' 
+//customWorkspace '/var/lib/jenkins/workspace/ClaimCenter1000/modules/configuration' 
 } 
 } 
 stages { 
 stage("Preparation") { 
 steps { 
 script { 
-props = readProperties file: '/var/lib/jenkins/workspace/ClaimCenter1000/modules/configuration/jenkins/gwcc.properties' 
+props = readProperties file: '/var/lib/jenkins/workspace/PipelineAsALibrary/gwcc.properties' 
 } 
 } 
 } 
