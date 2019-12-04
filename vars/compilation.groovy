@@ -1,5 +1,5 @@
-def call(Map params){
- def dirc = params.Dir
+def call(string Dir){
+ def dirc = Dir
 dir(dirc){
 echo 'hello'
 }
