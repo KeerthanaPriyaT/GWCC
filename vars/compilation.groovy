@@ -1,4 +1,4 @@
-def call(string Dir){
+def call(String Dir){
  def dirc = Dir
 dir(dirc){
 echo 'hello'
