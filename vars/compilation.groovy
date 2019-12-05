@@ -1,6 +1,6 @@
 def call(String Dircect){
  def dirc = Dircect
-dir(dirc){
+//dir(dirc){
 echo 'hello'
-}
+//}
 }
