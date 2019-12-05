@@ -1,5 +1,5 @@
-def call(String Dirc){
- def dirc = Dirc
+def call(String Dircect){
+ def dirc = Dircect
 dir(dirc){
 echo 'hello'
 }
