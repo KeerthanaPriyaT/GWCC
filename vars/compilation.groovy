@@ -1,6 +1,6 @@
 def call(String Dirc){
- //def dirc = Dir
-//dir(dirc){
+ def dirc = Dirc
+dir(dirc){
 echo 'hello'
 }
-//}
+}
