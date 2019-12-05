@@ -1,4 +1,4 @@
-if call(Map params){
+if call(Map params = [:]){
  def dirc = params.Dir
  def hsturl = params.Urll
  def pName = params.ProjName
